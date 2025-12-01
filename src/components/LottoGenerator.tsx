@@ -1,5 +1,4 @@
 import React, { useState, useRef } from "react";
-import html2canvas from "html2canvas";
 import { Sparkles, Download, RefreshCw, Trash2 } from "lucide-react";
 
 interface LottoNumber {
