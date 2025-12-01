@@ -1,5 +1,4 @@
-import React from 'react';
-import LottoGenerator from './components/LottoGenerator';
+import LottoGenerator from "./components/LottoGenerator";
 
 function App() {
   return <LottoGenerator />;
