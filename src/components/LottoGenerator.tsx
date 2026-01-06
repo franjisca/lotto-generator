@@ -186,7 +186,7 @@ const LottoGenerator: React.FC = () => {
       ctx.font = '11px "Noto Sans KR", sans-serif';
       ctx.fillStyle = "#d1d5db";
       ctx.fillText(
-        "© 2025 Lotto Generator - Made by J!yeon",
+        "© Lotto Generator - Made by J!yeon 2025.12",
         300,
         bottomY + 150
       );
