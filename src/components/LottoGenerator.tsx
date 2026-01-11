@@ -302,9 +302,9 @@ const LottoGenerator: React.FC = () => {
                 {lottoSets.map((set, index) => (
                   <div key={set.id} className="relative group">
                     <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between p-3 bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg sm:rounded-xl border border-gray-200 transition-all duration-300 hover:shadow-md">
-                      <div className="flex items-center gap-2 sm:gap-4 w-full sm:w-auto overflow-x-auto">
+                      <div className="flex items-center gap-1 sm:gap-4 w-full">
                         <div
-                          className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full text-white font-bold shadow-md flex-shrink-0"
+                          className="w-7 h-7 sm:w-10 sm:h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full text-white font-bold shadow-md flex-shrink-0"
                           style={{
                             display: "table",
                             position: "relative",
@@ -315,24 +315,24 @@ const LottoGenerator: React.FC = () => {
                             style={{
                               display: "table-cell",
                               verticalAlign: "middle",
-                              lineHeight: "32px",
+                              lineHeight: "28px",
                               textAlign: "center",
-                              fontSize: "14px",
+                              fontSize: "12px",
                             }}
                             className="sm:text-base sm:leading-10"
                           >
                             {String.fromCharCode(65 + index)}
                           </span>
                         </div>
-                        <div className="flex gap-1.5 sm:gap-2">
+                        <div className="flex gap-1 sm:gap-2">
                           {set.numbers.map((num) => (
                             <div
                               key={num}
                               className={`
-        w-9 h-9 sm:w-12 sm:h-12 rounded-full font-bold text-sm sm:text-lg
-        shadow-md transform transition-all duration-300 hover:scale-110 hover:rotate-3
-        ${getNumberColor(num)} flex-shrink-0
-      `}
+          w-7 h-7 sm:w-12 sm:h-12 rounded-full font-bold text-xs sm:text-lg
+          shadow-md transform transition-all duration-300 hover:scale-110 hover:rotate-3
+          ${getNumberColor(num)} flex-shrink-0
+        `}
                               style={{
                                 display: "table",
                                 position: "relative",
@@ -343,9 +343,9 @@ const LottoGenerator: React.FC = () => {
                                 style={{
                                   display: "table-cell",
                                   verticalAlign: "middle",
-                                  lineHeight: "36px",
+                                  lineHeight: "28px",
                                   textAlign: "center",
-                                  fontSize: "14px",
+                                  fontSize: "12px",
                                 }}
                                 className="sm:text-lg sm:leading-[48px]"
                               >
