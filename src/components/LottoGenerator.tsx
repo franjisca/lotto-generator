@@ -302,7 +302,7 @@ const LottoGenerator: React.FC = () => {
                 {lottoSets.map((set, index) => (
                   <div key={set.id} className="relative group">
                     <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between p-3 bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg sm:rounded-xl border border-gray-200 transition-all duration-300 hover:shadow-md">
-                      <div className="flex items-center gap-2 sm:gap-4 w-full sm:w-auto">
+                      <div className="flex items-center gap-2 sm:gap-4 w-full sm:w-auto overflow-x-auto">
                         <div
                           className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full text-white font-bold shadow-md flex-shrink-0"
                           style={{
