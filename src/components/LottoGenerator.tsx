@@ -324,15 +324,15 @@ const LottoGenerator: React.FC = () => {
                             {String.fromCharCode(65 + index)}
                           </span>
                         </div>
-                        <div className="flex gap-1.5 sm:gap-2 flex-wrap">
+                        <div className="flex gap-1.5 sm:gap-2">
                           {set.numbers.map((num) => (
                             <div
                               key={num}
                               className={`
-                  w-9 h-9 sm:w-12 sm:h-12 rounded-full font-bold text-sm sm:text-lg
-                  shadow-md transform transition-all duration-300 hover:scale-110 hover:rotate-3
-                  ${getNumberColor(num)}
-                `}
+        w-9 h-9 sm:w-12 sm:h-12 rounded-full font-bold text-sm sm:text-lg
+        shadow-md transform transition-all duration-300 hover:scale-110 hover:rotate-3
+        ${getNumberColor(num)} flex-shrink-0
+      `}
                               style={{
                                 display: "table",
                                 position: "relative",
